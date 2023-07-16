@@ -65,4 +65,12 @@ LLAMADA A UN METODO
 
     		return 0;
 	}
+
+GENERAR NUMEROS ALEATORIOS
+
+#include <cstdlib>
+#include <ctime>
+
+    srand(time(0));  // Inicializar la semilla del generador de números aleatorios
+    int secretnumber = rand() % 101;  // Generar un número aleatorio entre 0 y 100
   
