@@ -1,3 +1,8 @@
+/**
+ * Make a program that asking for a password.
+ * The user have three attempts maximum.
+ * The password is 111 or 222 or 333.
+ */
 #include <iostream>
 using namespace std;
 
