@@ -1,0 +1,68 @@
+Comparacion
+	Mayor				>
+	Menor				<
+	Mayor Igual			>=
+	Menor Igual			<=
+	Igual				==
+	Diferente			=!
+
+Logicos
+	Negacion			!
+	AND				&&
+	OR				||
+
+BUCLES
+	DoWhile
+		int calculateAdditionDoWhile(int n) {
+    			int addition = 0;
+    			int counter = 1;
+    
+    			do {
+        			addition += counter;
+        			counter++;
+    			} 
+    			while (counter <= n);
+    
+    			return addition;
+		}
+	
+	While
+		int calculateAdditionWhile(int n) {
+    			int addition = 0;
+    			int counter = 1;
+    
+    			while (counter <= n) {
+        			addition += counter;
+        			counter++;
+    			}
+    
+    			return addition;
+		}
+
+	
+	For
+		int calculateAdditionFor(int n) {
+    			int addition = 0;
+    
+    			for (int counter = 1; counter <= n; counter++) {
+        			addition += counter;
+    			}
+    
+    			return addition;
+		}
+
+LLAMADA A UN METODO
+
+	int main() {
+    		int number;
+
+    		cout << "Introduce the number to calculate: ";
+    		cin >> number;
+
+    		cout << "The additions result is: " << calculateAdditionDoWhile(number) << endl;
+    		cout << "The additions result is: " << calculateAdditionWhile(number) << endl;
+    		cout << "The additions result is: " << calculateAdditionFor(number) << endl;
+
+    		return 0;
+	}
+  
