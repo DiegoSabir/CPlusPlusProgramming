@@ -1,31 +1,39 @@
 #include <iostream>
 using namespace std;
 
+void printDiamond(int height) {
+    for (int i = 0; i < height; i++) {
+        for (int j = 0; j < height - i - 1; j++) {
+            cout << " ";
+        }
+        
+        for (int j = 0; j < i * 2 + 1; j++) {
+            cout << "*";
+        }
+        
+        cout << endl;
+    }
+    
+    for (int i = height - 2; i >= 0; i--) {
+        for (int j = 0; j < height - i - 1; j++) {
+            cout << " ";
+        }
+        
+        for (int j = 0; j < i * 2 + 1; j++) {
+            cout << "*";
+        }
+        
+        cout << endl;
+    }
+}
+
 int main() {
-    // Upper part
-    for (int i = 1; i < 5; i++) {
-        int stars = 2 * i - 1;
-        int spaces = 4 - i; // There are 4 spaces to center the diamond
-        for (int j = 0; j < spaces; j++) {
-            cout << " ";
-        }
-        for (int j = 0; j < stars; j++) {
-            cout << " *";
-        }
-        cout << endl;
-    }
-    // Lower part
-    for (int i = 3; i > 0; i--) {
-        int stars = 2 * i - 1;
-        int spaces = 4 - i;
-        for (int j = 0; j < spaces; j++) {
-            cout << " ";
-        }
-        for (int j = 0; j < stars; j++) {
-            cout << " *";
-        }
-        cout << endl;
-    }
+    int height;
+
+    cout << "Enter the height of the diamond: ";
+    cin >> height;
+
+    printDiamond(height);
 
     return 0;
 }
