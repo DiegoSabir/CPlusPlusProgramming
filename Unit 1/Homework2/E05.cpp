@@ -31,7 +31,7 @@ bool isOmirp(int num) {
     str = reverseString(str);
 
     int reversedNum = stoi(str);
-    
+
     if (!isPrime(reversedNum)) return false;
     return true;
 }
@@ -41,10 +41,6 @@ int main() {
     cout << "Enter a number to check: ";
     cin >> num;
     cout << boolalpha << isOmirp(num) << endl;
-
-    // Example usage:
-    // cout << boolalpha << isOmirp(7952) << endl; // -> false
-    // cout << boolalpha << isOmirp(7951) << endl; // -> true
 
     return 0;
 }
